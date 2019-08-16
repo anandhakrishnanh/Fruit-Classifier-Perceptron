@@ -1,8 +1,11 @@
-l=0.25
+#initialise the variables
+l=0.25 #learnign rate
 y=0
-w=[0,0,0,0]
+w=[0,0,0,0] #inital value of weights 
 dw=[0,0,0,0,0,0,0,0,0,0,0,0,0]
 print("The following convention needs to be used:\nTaste: Sweet=1 Not sweet=0\nSeeds: Edible=1 Not edible=0\nSkin Edible=1 Not edible=0");
+#We are now training the perceptron
+#-----------------------------------------------------------------------
 print("\nThis is the training session:\n")
 i=1
 x=[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
@@ -39,12 +42,15 @@ while True:
     i=i+1
     if dec==0:
         break
+#This is the testing phase
+#-------------------------------------------------------------
 while True:
     print("Enter the qualities of the testing fruit\n")
+    #taking the input features of the testing fruit
     x1=input()
     x2=input()
     x3=input()
-    y = w[1] * x1 + w[2] * x2 + w[3] * x3
+    y = w[1] * x1 + w[2] * x2 + w[3] * x3 
     if y>0.4:
         print("The answer is one hence the fruit is good\n")
     else:
