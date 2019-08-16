@@ -25,6 +25,8 @@ while True:
     print("\nThe obtained value of the "+str(i)+"th fruit is : "+str(y)+" hence the output is "+str(y2))
     yl=int(input("Enter the actual value of "+str(i)+"th fruit"))
     print(yl)
+    #If our output does not match the actual output said by the teacher we will need to set a new set of weights. 
+    #This will be learning function to learn the new weights 
     if(y2!=yl):
         j=1
         while j<=3:
@@ -55,6 +57,7 @@ while True:
         print("The answer is one hence the fruit is good\n")
     else:
         print("The answer is zero hence the fruit is bad\n")
+#------------------------------------------------------------------
     print("Do you want to continue testing...\nEnter 1: Continue     Enter 0:End Code\n")
     m=input(":")
     if(m==0):
