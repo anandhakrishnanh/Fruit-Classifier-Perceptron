@@ -105,7 +105,7 @@ You can visualize the above neutron as below
 
 ![image1](https://user-images.githubusercontent.com/42119760/63162100-5ef38100-c03f-11e9-9ee1-82e907170a06.PNG)
 
-2. ####Training phase
+2. ####Training Phase
 We train the neutron with a few known classes. First we train with a fruit having good taste,
 edible seeds and edible skin. So the input would be (1,1,0) as below 
 
